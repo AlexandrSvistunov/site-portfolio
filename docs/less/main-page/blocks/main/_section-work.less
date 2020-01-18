@@ -1,0 +1,121 @@
+.section-work {
+	position: relative;
+	padding: 140px 0;
+	background-image: url(../img/main-page/work/bg-work.jpg);
+	background-position: center;
+	background-repeat: repeat-y;
+}
+
+.section-work-title-wrapper {
+	margin-bottom: 155px;
+	text-align: center;
+}
+
+.section-work-container {
+	width: 1005px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section-work-row {
+	display: flex;
+	text-align: right;
+
+	&:nth-child(even) {
+		flex-direction: row-reverse;
+		text-align: left;
+	}
+}
+
+.section-work-block-content {
+	padding-top: 22px;
+	padding-bottom: 85px;
+	width: 425px;
+
+}
+
+.section-work-block-title {
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 26px;
+	font-weight: 800;
+	line-height: 1.2;
+
+	span {
+		position: relative;
+		z-index: 1;
+	}
+
+	span::after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		transform: translateY(-50%);
+		content: "";
+		width: 100%;
+		background-color: #fbdc4d;
+		height: 7px;
+		z-index: -1;
+	}
+}
+
+.section-work-block-text {
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.2;
+
+}
+
+.section-work-block-time {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.section-work-img-wrapper {
+	margin-right: 40px;
+	margin-left: 41px;
+	position: relative;
+	display: inline-block;
+	width: 74px;
+	height: 74px;
+	border-radius: 28px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 3px 35px 0px rgba(0, 112, 187, 0.35);
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, calc(~'-100% - 20px'));
+		content: "";
+		width: 4px;
+		height: 57px;
+		border-radius: 2px;
+		background-color: rgb(225, 238, 244);
+	}
+
+	&::after {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, calc(~'100% + 20px'));
+		content: "";
+		width: 4px;
+		height: 110px;
+		border-radius: 2px;
+		background-color: rgb(225, 238, 244);
+	}
+}
+
+.section-work-img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}

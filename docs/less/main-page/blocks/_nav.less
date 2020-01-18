@@ -1,0 +1,103 @@
+.nav {
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 140px;
+	z-index: 99;
+}
+
+.logo {
+	text-transform: uppercase;
+	font-size: 42px;
+	font-weight: 900;
+	letter-spacing: 0.1em;
+	z-index: 1;
+
+	margin: 0;
+	position: relative;
+
+	&::after {
+		position: absolute;
+		bottom: 5px;
+		left: -5px;
+		right: -5px;
+		transform: translateY(-50%);
+		content: "";
+		width: calc(~"100% + 7px");
+		background-color: #fbdc4d;
+		height: 10px;
+		z-index: -2;
+	}
+}
+
+.logo-link {
+	font-size: 42px;
+	line-height: 1.2;
+	color: #000;
+
+	text-decoration: none;
+	transition: 0.2s;
+
+	&:hover {
+		color: #ea736d;
+	}
+}
+
+.nav-menu {
+	font-size: 20px;
+	line-height: 1.2;
+	font-weight: 600;
+
+	padding-right: 5px;
+
+	width: 415px;
+
+}
+
+.nav-link {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	position: relative;
+	z-index: 2;
+
+	&:hover::after {
+		position: absolute;
+		bottom: 0;
+		left: -3px;
+		right: -5px;
+		transform: translateY(-50%);
+		content: "";
+		width: calc(~"100% + 5px");
+		background-color: #fbdc4d;
+		height: 6px;
+		z-index: -1;
+	}
+}
+
+.nav-icons {
+	width: 130px;
+}
+
+.nav-icons-link i {
+	transition: 0.2s;
+}
+
+.nav-icons-link {
+	font-size: 32px;
+	color: #000;
+
+	.fa-linkedin-in:hover,
+	.fa-linkedin-in:active {
+		color: #0077b5;
+	}
+
+	.fa-github:hover,
+	.fa-github:active {
+		color: #6cc644;
+	}
+
+	.fa-vk:hover,
+	.fa-vk:active {
+		color: #45668e;
+	}
+}
