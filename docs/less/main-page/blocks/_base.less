@@ -59,10 +59,14 @@ img {
 
 .title {
 	margin: 0;
-	font-size: 64px;
-	font-weight: 900;
+	font-size: 42px;
+	font-weight: 800;
 	line-height: 1.2;
 	letter-spacing: 0.1%;
+
+	@media (min-width: 1200px) {
+		font-size: 64px;
+	}
 
 	span {
 		position: relative;
@@ -71,14 +75,18 @@ img {
 
 	span::after {
 		position: absolute;
-		bottom: 10px;
+		bottom: 0px;
 		left: -5px;
 		transform: translateY(-50%);
 		content: "";
 		width: calc(~'100% + 10px');
 		background-color: rgb(251, 220, 77);
-		height: 10px;
+		height: 11px;
 		z-index: -1;
+
+		@media (min-width: 1200px) {
+			bottom: 10px;
+		}
 	}
 }
 
