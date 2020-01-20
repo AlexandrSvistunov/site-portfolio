@@ -1,9 +1,17 @@
 .nav {
 	max-width: 1400px;
+	padding-left: 20px;
+	padding-right: 35px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 140px;
-	z-index: 99;
+
+	@media (min-width: 1200px) {
+		max-width: 1400px;
+		padding: 0;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 140px;
+	}
 }
 
 .logo {
@@ -44,17 +52,20 @@
 }
 
 .nav-menu {
-	font-size: 20px;
-	line-height: 1.2;
-	font-weight: 600;
+	display: none;
 
-	padding-right: 5px;
+	@media (min-width: 1200px) {
+		display: flex;
+		font-size: 20px;
+		line-height: 1.2;
+		font-weight: 600;
 
-	width: 415px;
+		width: 410px;
+	}
 
 }
 
-.nav-link {
+.nav-menu-link {
 	color: rgb(0, 0, 0);
 	text-decoration: none;
 	position: relative;
@@ -75,7 +86,13 @@
 }
 
 .nav-icons {
-	width: 130px;
+	display: none;
+
+	@media (min-width: 1200px) {
+		display: flex;
+		width: 130px;
+	}
+
 }
 
 .nav-icons-link i {
@@ -99,5 +116,64 @@
 	.fa-vk:hover,
 	.fa-vk:active {
 		color: #45668e;
+	}
+}
+
+.nav-menu-hamburger {
+	padding-top: 18px;
+	height: 35px;
+	width: 40px;
+
+	cursor: pointer;
+
+	&.nav__menu-icon-active .nav-menu-icon-line {
+		background-color: transparent;
+
+		&:before {
+			transform: rotate(45deg);
+			top: 0;
+			transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+		}
+
+		&:after {
+			transform: rotate(-45deg);
+			top: 0;
+			transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		display: none;
+	}
+}
+
+.nav-menu-icon-line {
+	position: relative;
+	width: 40px;
+	height: 5px;
+	background-color: #000000;
+
+	&:before {
+		position: absolute;
+		left: 0;
+		top: -10px;
+		content: "";
+		display: block;
+		width: 40px;
+		height: 5px;
+		background-color: #000000;
+		transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+	}
+
+	&:after {
+		position: absolute;
+		left: 0;
+		top: 10px;
+		content: "";
+		display: block;
+		width: 40px;
+		height: 5px;
+		background-color: #000000;
+		transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 	}
 }
