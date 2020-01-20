@@ -151,6 +151,11 @@ img {
   -moz-transition: 0.2s;
   transition: 0.2s;
 }
+@media (min-width: 768px) {
+  .mail-link {
+    font-size: 20px;
+  }
+}
 @media (min-width: 1200px) {
   .mail-link {
     font-size: 24px;
@@ -168,7 +173,7 @@ img {
   width: 290px;
   margin-bottom: 12px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .social-icons-wrapper {
     margin-bottom: 25px;
   }
@@ -187,6 +192,11 @@ img {
   position: relative;
   padding-top: 20px;
   padding-bottom: 100px;
+}
+@media (min-width: 768px) {
+  .header {
+    padding-bottom: 45px;
+  }
 }
 @media (min-width: 1200px) {
   .header {
@@ -216,6 +226,14 @@ img {
   background-position: center;
   background-repeat: no-repeat;
 }
+@media (min-width: 768px) {
+  .header::after {
+    width: 768px;
+    height: 405px;
+    bottom: 375px;
+    z-index: -4;
+  }
+}
 @media (min-width: 1200px) {
   .header::after {
     width: 1600px;
@@ -237,7 +255,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .header-about {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -246,6 +264,17 @@ img {
        -moz-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding-right: 25px;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+       -moz-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+@media (min-width: 1200px) {
+  .header-about {
+    padding: 0;
   }
 }
 .header-photo {
@@ -253,13 +282,30 @@ img {
   padding-top: 25px;
   width: 290px;
   margin-bottom: 45px;
+  z-index: 10;
+}
+@media (min-width: 768px) {
+  .header-photo::after {
+    position: absolute;
+    top: 75px;
+    left: 50px;
+    content: "";
+    width: 290px;
+    height: 290px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#f4f8f9), to(rgba(244, 248, 249, 0)));
+    background-image: -webkit-linear-gradient(left, #f4f8f9 0%, rgba(244, 248, 249, 0) 100%);
+    background-image: -moz-linear-gradient(left, #f4f8f9 0%, rgba(244, 248, 249, 0) 100%);
+    background-image: -o-linear-gradient(left, #f4f8f9 0%, rgba(244, 248, 249, 0) 100%);
+    background-image: linear-gradient(90deg, #f4f8f9 0%, rgba(244, 248, 249, 0) 100%);
+    opacity: 0.502;
+    z-index: -3;
+  }
 }
 @media (min-width: 1200px) {
   .header-photo {
     width: 460px;
     padding-top: 30px;
     margin: 0;
-    z-index: 10;
   }
   .header-photo::after {
     position: absolute;
@@ -289,9 +335,16 @@ img {
   width: 100%;
   z-index: 1;
 }
+@media (min-width: 768px) {
+  .header-content-about {
+    width: 390px;
+    padding-top: 35px;
+  }
+}
 @media (min-width: 1200px) {
   .header-content-about {
-    max-width: 585px;
+    width: 585px;
+    padding-top: 5px;
   }
 }
 .header-title {
@@ -322,9 +375,20 @@ img {
   height: 12px;
   z-index: -1;
 }
+@media (min-width: 768px) {
+  .header-title span::after {
+    bottom: 5px;
+  }
+}
 @media (min-width: 1200px) {
   .header-title span::after {
     bottom: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .header-title {
+    font-size: 52px;
+    margin-bottom: 15px;
   }
 }
 @media (min-width: 1200px) {
@@ -343,6 +407,11 @@ img {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.67;
+}
+@media (min-width: 768px) {
+  .content-text {
+    width: 390px;
+  }
 }
 @media (min-width: 1200px) {
   .content-text {
@@ -368,6 +437,11 @@ img {
 .header-skills {
   padding-top: 280px;
 }
+@media (min-width: 768px) {
+  .header-skills {
+    padding-top: 322px;
+  }
+}
 @media (min-width: 1200px) {
   .header-skills {
     padding-top: 700px;
@@ -388,6 +462,11 @@ img {
   line-height: 1.2;
   text-shadow: 0px 3px 42.32px #ffffff;
   letter-spacing: 0.02em;
+}
+@media (min-width: 768px) {
+  .section-skills-list {
+    width: 320px;
+  }
 }
 @media (min-width: 1200px) {
   .section-skills-list {
@@ -431,6 +510,11 @@ img {
     display: inline-block;
   }
 }
+@media (min-width: 768px) {
+  .header-contacts {
+    padding-right: 45px;
+  }
+}
 @media (min-width: 1200px) {
   .header-contacts {
     padding-right: 70px;
@@ -450,6 +534,13 @@ img {
   padding-right: 35px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 768px) {
+  .nav {
+    padding-left: 35px;
+    padding-right: 50px;
+    margin-bottom: 40px;
+  }
 }
 @media (min-width: 1200px) {
   .nav {
