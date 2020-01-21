@@ -4,8 +4,12 @@
 	padding-bottom: 60px;
 	background-color: #f4f8f9;
 
+	@media (min-width: 768px) {
+		padding-top: 80px;
+	}
+
 	@media (min-width: 1200px) {
-		padding-top: 28px;
+		padding-top: 140px;
 		padding-bottom: 145px;
 		background-image: url(../img/main-page/contacts/contact-lines.jpg);
 		background-position: center;
@@ -15,11 +19,19 @@
 
 .section-contacts-row {
 	align-items: flex-start;
+
+	@media (min-width: 1200px) {
+		padding-right: 20px;
+	}
 }
 
 .section-contacts-title-wrapper {
 	margin-bottom: 25px;
 	text-align: center;
+
+	@media (min-width: 768px) {
+		margin-bottom: 35px;
+	}
 
 	@media (min-width: 1200px) {
 		margin-bottom: 65px;
@@ -30,6 +42,11 @@
 	position: relative;
 	padding-top: 23px;
 	max-width: 500px;
+	z-index: 1;
+
+	@media (min-width: 768px) {
+		max-width: 336px;
+	}
 
 	@media (min-width: 1200px) {
 		padding-top: 23px;
@@ -46,6 +63,7 @@
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: contain;
+			z-index: -1;
 		}
 
 	}
@@ -58,6 +76,12 @@
 	font-weight: 400;
 	line-height: 1.63;
 	letter-spacing: 0.02em;
+
+	@media (min-width: 768px) {
+		font-size: 18px;
+		line-height: 1.56;
+		margin-bottom: 30px;
+	}
 
 	@media (min-width: 1200px) {
 		margin-bottom: 40px;
@@ -85,9 +109,10 @@
 		font-weight: 700;
 
 		@media (min-width: 1200px) {
-			margin-bottom: 20px;
+			margin-bottom: 25px;
 			width: 165px;
 			font-size: 20px;
+			line-height: 1.3;
 
 			&:last-of-type {
 				margin-bottom: 0;
@@ -98,17 +123,26 @@
 
 	dd {
 		font-size: 18px;
+		line-height: 0.9;
+
 		margin: 0;
 		margin-bottom: 10px;
+
+		@media (min-width: 768px) {
+			margin-bottom: 15px;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
 
 		@media (min-width: 1200px) {
 			margin-bottom: 0;
 			width: 295px;
 			font-size: 20px;
 			color: rgb(150, 150, 157);
-			line-height: 1.2;
+			line-height: 1.3;
 		}
-
 
 		a {
 			font-size: 20px;
@@ -124,9 +158,16 @@
 }
 
 .section-contacts-form-wrapper {
+	width: 100%;
+	max-width: 510px;
 
-	@media (min-width: 1200px) {
-		padding-right: 20px;
+	@media (min-width: 768px) {
+		padding-top: 30px;
+		width: 340px;
 	}
 
+	@media (min-width: 1200px) {
+		width: 510px;
+		padding: 0;
+	}
 }
