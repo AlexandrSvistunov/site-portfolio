@@ -8,3 +8,5 @@ burgerMenuItem.onclick = function () {
 	mobileNav.classList.toggle('mobile-nav-active');
 
 };
+
+$('.filter-projects').mixItUp();

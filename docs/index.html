@@ -59,7 +59,7 @@
 					</p>
 					<div class="header-battons-wrapper flex-row">
 						<a href="#" class="buttons-link">Познакомиться</a>
-						<a href="#" class="buttons-link buttons-link--bgc">Контакты</a>
+						<a href="#" class="buttons-link buttons-link-contacts">Контакты</a>
 					</div>
 				</div>
 				<div class="header-photo">
@@ -112,16 +112,16 @@
 				</div>
 				<ul class="section-portfolio-filter flex-row">
 					<li>
-						<a href="#" class="section-portfolio-filter-link portfolio-link-active">Все работы</a>
+						<a href="#!" class="section-portfolio-filter-link portfolio-link-active filter" data-filter="all">Все работы</a>
 					</li>
 					<li>
-						<a href="#" class="section-portfolio-filter-link">Bootstrap</a>
+						<a href="#!" class="section-portfolio-filter-link filter" data-filter=".bs">Bootstrap</a>
 					</li>
 					<li>
-						<a href="#" class="section-portfolio-filter-link">WordPress</a>
+						<a href="#!" class="section-portfolio-filter-link filter" data-filter=".wp">WordPress</a>
 					</li>
 					<li>
-						<a href="#" class="section-portfolio-filter-link">Frontend</a>
+						<a href="#!" class="section-portfolio-filter-link filter" data-filter=".front">Frontend</a>
 					</li>
 				</ul>
 
@@ -150,8 +150,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="flex-row">
-					<div class="project-card-small">
+				<div class="flex-row filter-projects">
+					<div class="project-card-small mix bs front">
 						<div class="project-card-img-wrapper portfolio-small-img">
 							<a href="#"><img class="project-card-img" src="./img/main-page/portfolio/img-03.jpg" alt="project-photo"></a>
 						</div>
@@ -162,7 +162,9 @@
 							<p class="project-card-subtitle-small">Верстка многостраничного сайта.</p>
 						</div>
 					</div>
-					<div class="project-card-small">
+
+					<div class="project-card-small mix front">
+
 						<div class="project-card-img-wrapper portfolio-small-img">
 							<a href="#"><img class="project-card-img" src="./img/main-page/portfolio/img-04.jpg" alt="project-photo"></a>
 						</div>
@@ -173,7 +175,44 @@
 							<p class="project-card-subtitle-small">Верстка многостраничного сайта.</p>
 						</div>
 					</div>
-					<div class="project-card-small">
+
+					<div class="project-card-small mix bs wp">
+						<div class="project-card-img-wrapper portfolio-small-img">
+							<a href="#"><img class="project-card-img" src="./img/main-page/portfolio/img-05.jpg" alt="project-photo"></a>
+						</div>
+						<div class="project-card-text">
+							<div class="project-card-title-small">
+								<a href="#" class="project-card-title-link">Верстка “Мир Авто”</a>
+							</div>
+							<p class="project-card-subtitle-small">Верстка многостраничного сайта.</p>
+						</div>
+					</div>
+
+					<div class="project-card-small mix bs">
+						<div class="project-card-img-wrapper portfolio-small-img">
+							<a href="#"><img class="project-card-img" src="./img/main-page/portfolio/img-03.jpg" alt="project-photo"></a>
+						</div>
+						<div class="project-card-text">
+							<div class="project-card-title-small">
+								<a href="#" class="project-card-title-link">Верстка “Мир Авто”</a>
+							</div>
+							<p class="project-card-subtitle-small">Верстка многостраничного сайта.</p>
+						</div>
+					</div>
+
+					<div class="project-card-small mix wp front">
+						<div class="project-card-img-wrapper portfolio-small-img">
+							<a href="#"><img class="project-card-img" src="./img/main-page/portfolio/img-04.jpg" alt="project-photo"></a>
+						</div>
+						<div class="project-card-text">
+							<div class="project-card-title-small">
+								<a href="#" class="project-card-title-link">Верстка “Мир Авто”</a>
+							</div>
+							<p class="project-card-subtitle-small">Верстка многостраничного сайта.</p>
+						</div>
+					</div>
+
+					<div class="project-card-small mix wp">
 						<div class="project-card-img-wrapper portfolio-small-img">
 							<a href="#"><img class="project-card-img" src="./img/main-page/portfolio/img-05.jpg" alt="project-photo"></a>
 						</div>
@@ -352,9 +391,8 @@
 		</div>
 
 	</div>
+	<sccript src="./libs/jquery/jquery-3.0.0.min.js"></sccript>
+	<sccript src="./libs/mixitup2/jquery.mixitup.min.js"></sccript>
+	<script src="./js/main.js"></script>
 
-	<script src="./js/burger-menu.js"></script>
-
-</body>
-
-</html>
+</body></html>
