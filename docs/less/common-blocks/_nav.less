@@ -126,34 +126,6 @@
 	}
 }
 
-.nav-menu-hamburger {
-	padding-top: 18px;
-	height: 35px;
-	width: 40px;
-
-	cursor: pointer;
-
-	&.nav__menu-icon-active .nav-menu-icon-line {
-		background-color: transparent;
-
-		&:before {
-			transform: rotate(45deg);
-			top: 0;
-			transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-		}
-
-		&:after {
-			transform: rotate(-45deg);
-			top: 0;
-			transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-		}
-	}
-
-	@media (min-width: 1200px) {
-		display: none;
-	}
-}
-
 .nav-menu-icon-line {
 	position: relative;
 	width: 40px;
