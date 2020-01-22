@@ -1013,6 +1013,12 @@ img {
 .section-portfolio-filter-link:hover {
   color: #ed574f;
 }
+.section-portfolio-filter-link:active {
+  color: #ed574f;
+}
+.section-portfolio-filter-link:focus {
+  color: #000;
+}
 @media (min-width: 768px) {
   .section-portfolio-filter-link {
     font-size: 24px;
