@@ -34,7 +34,7 @@
 					<a href="portfolio.html" class="nav-menu-link">Работы</a>
 				</li>
 				<li>
-					<a href="#" class="nav-menu-link">Контакты</a>
+					<a href="#contacts" class="nav-menu-link">Контакты</a>
 				</li>
 			</ul>
 			<ul class="nav-icons flex-row">
@@ -45,7 +45,7 @@
 					<a class="nav-icons-link" href="#"><i class="fab fa-github"></i></a>
 				</li>
 				<li>
-					<a class="nav-icons-link" href=""> <i class="fab fa-vk"></i></a>
+					<a class="nav-icons-link" href="https://vk.com/codemyself"> <i class="fab fa-vk"></i></a>
 				</li>
 			</ul>
 		</nav>
@@ -59,7 +59,7 @@
 					</p>
 					<div class="header-battons-wrapper flex-row">
 						<a href="#" class="buttons-link">Познакомиться</a>
-						<a href="#" class="buttons-link buttons-link-contacts">Контакты</a>
+						<a href="#contacts" class="buttons-link buttons-link-contacts">Контакты</a>
 					</div>
 				</div>
 				<div class="header-photo">
@@ -83,7 +83,7 @@
 							<li>Оптимизация под retina экраны.</li>
 							<li>С Bootstrap и без него.</li>
 						</ul>
-						<a href="#" class="buttons-link  section-skills-button ">Смотреть работы</a>
+						<a href="portfolio.html" class="buttons-link  section-skills-button ">Смотреть работы</a>
 					</div>
 					<div class="header-contacts">
 						<div class="header-contacts-subtitle">
@@ -92,7 +92,7 @@
 						<div class="social-icons-wrapper">
 							<a href="#" class="social-icons-link"><img src="./img/main-page/social-icons/github.svg" alt="Моя страница на Гитхабе"></a>
 							<a href="#" class="social-icons-link"><img src="./img/main-page/social-icons/telegram.svg" alt="Моя страница в Телеграм"></a>
-							<a href="#" class="social-icons-link"><img src="./img/main-page/social-icons/vk.svg" alt="Моя страница В контакте"></a>
+							<a href="https://vk.com/codemyself" class="social-icons-link"><img src="./img/main-page/social-icons/vk.svg" alt="Моя страница В контакте"></a>
 							<a href="#" class="social-icons-link"><img src="./img/main-page/social-icons//facebook.svg" alt="Моя страница на Фейсбуке"></a>
 						</div>
 						<a class="mail-link" href="mailto:alsvis@gmail.com">alsvis2019@gmail.com</a>
@@ -248,7 +248,7 @@
 					</div>
 				</div>
 				<div class="portfolio-mobile-link-wrapper">
-					<a class="portfolio-mobile-link" href="#">Смотреть все работы</a>
+					<a class="portfolio-mobile-link" href="portfolio.html">Смотреть все работы</a>
 				</div>
 			</div>
 		</section>
@@ -313,7 +313,7 @@
 		</section>
 
 		<!-- section-contacts -->
-		<section class="section-contacts">
+		<section class="section-contacts" id="contacts">
 			<div class="container">
 
 				<div class="section-contacts-title-wrapper">
@@ -339,23 +339,26 @@
 						<div class="social-icons-wrapper">
 							<a href="#" class="social-icons-link"><img src="./img/main-page/social-icons/github.svg" alt="Моя страница на Гитхабе"></a>
 							<a href="#" class="social-icons-link"><img src="./img/main-page/social-icons/telegram.svg" alt="Моя страница в Телеграм"></a>
-							<a href="#" class="social-icons-link"><img src="./img/main-page/social-icons/vk.svg" alt="Моя страница В контакте"></a>
+							<a href="https://vk.com/codemyself" class="social-icons-link"><img src="./img/main-page/social-icons/vk.svg" alt="Моя страница В контакте"></a>
 							<a href="#" class="social-icons-link"><img src="./img/main-page/social-icons//facebook.svg" alt="Моя страница на Фейсбуке"></a>
 						</div>
 
 					</div>
 					<div class="section-contacts-form-wrapper">
-						<form class="form" method="post" action="#">
+						<form class="form" method="post" action="#" id="contact-form">
+							<input type="hidden" name="project_name" value="mysite.ru">
+							<input type="hidden" name="admin_email" value="alsvis2019@gmail.com">
+							<input type="hidden" name="email_form" value="info@mysite.ru">
 							<div class="input-wrapper">
-								<input id="mail" class="input" type="text" required>
+								<input id="mail" class="input input-validate" type="text" name="email">
 								<label for="mail" class="fake-placeholder">Ваш Email</label>
 							</div>
 							<div class="input-wrapper">
-								<input id="theme" class="input" type="text" required>
+								<input id="theme" class="input input-validate" type="text" name="theme">
 								<label for="theme" class="fake-placeholder">Тема письма</label>
 							</div>
 							<div class="input-wrapper textarea-wrapper">
-								<textarea id="message" class="textarea" required></textarea>
+								<textarea id="message" class="textarea input-validate" name="message"></textarea>
 								<label for="message" class="fake-placeholder">Сообщение</label>
 							</div>
 							<div class="submit-wrapper">
@@ -364,6 +367,7 @@
 								</div>
 							</div>
 						</form>
+						<div id="answer"></div>
 					</div>
 				</div>
 			</div>
@@ -389,7 +393,7 @@
 
 		<div class="mobile-nav">
 			<div class="logo mobile-nav-logo">
-				<a href="#" class="logo-link">ас</a>
+				<a href="index.html" class="logo-link">ас</a>
 			</div>
 
 			<ul class="mobile-nav-list">
@@ -397,17 +401,17 @@
 					<a href="#">Услуги</a>
 				</li>
 				<li>
-					<a href="#">Работы</a>
+					<a href="portfolio.html">Работы</a>
 				</li>
 				<li>
-					<a href="#">Контакты</a>
+					<a href="#contacts">Контакты</a>
 				</li>
 			</ul>
 
 			<div class="social-icons-wrapper mobail-nav-icons-wrapper">
 				<a href="#" class="social-icons-link mobail-nav-icons"><img src="./img/main-page/social-icons/github.svg" alt="Моя страница на Гитхабе"></a>
 				<a href="#" class="social-icons-link mobail-nav-icons"><img src="./img/main-page/social-icons/telegram.svg" alt="Моя страница в Телеграм"></a>
-				<a href="#" class="social-icons-link mobail-nav-icons"><img src="./img/main-page/social-icons/vk.svg" alt="Моя страница В контакте"></a>
+				<a href="https://vk.com/codemyself" class="social-icons-link mobail-nav-icons"><img src="./img/main-page/social-icons/vk.svg" alt="Моя страница В контакте"></a>
 				<a href="#" class="social-icons-link mobail-nav-icons"><img src="./img/main-page/social-icons//facebook.svg" alt="Моя страница на Фейсбуке"></a>
 			</div>
 			<a class="mobail-nav-mail-link" href="mailto:alsvis@gmail.com">alsvis2019@gmail.com</a>
@@ -416,6 +420,7 @@
 	</div>
 	<script src="./libs/jquery/jquery-3.0.0.min.js"></script>
 	<script src="./libs/mixitup2/jquery.mixitup.min.js"></script>
+	<script src="./libs/jquery.validate/jquery.validate.js"></script>
 	<script src="./js/main.js"></script>
 
 </body></html>

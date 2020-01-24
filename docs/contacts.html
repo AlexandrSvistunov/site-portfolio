@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Сайт-портфолио Александр Свистунов</title>
+	<link rel="stylesheet" href="./css/style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,700&display=swap&subset=cyrillic-ext" rel="stylesheet" />
+
+	<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500,700,800&display=swap&subset=cyrillic-ext" rel="stylesheet" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+</head>
+
+<body>
+
+	<!-- header -->
+	<header class="header page-contacts-header">
+
+		<!-- nav -->
+		<nav class="nav flex-row page-contacts-nav">
+			<div class="logo">
+				<a href="index.html" class="logo-link">ас</a>
+			</div>
+			<ul class="nav-menu flex-row">
+				<li>
+					<a href="index.html" class="nav-menu-link">Главная</a>
+				</li>
+				<li>
+					<a href="portfolio.html" class="nav-menu-link">Работы</a>
+				</li>
+				<li>
+					<a href="#" class="nav-menu-link">Контакты</a>
+				</li>
+			</ul>
+			<ul class="nav-icons flex-row">
+				<li>
+					<a class="nav-icons-link" href="#"><i class="fab fa-linkedin-in"></i></a>
+				</li>
+				<li>
+					<a class="nav-icons-link" href="#"><i class="fab fa-github"></i></a>
+				</li>
+				<li>
+					<a class="nav-icons-link" href="https://vk.com/codemyself"> <i class="fab fa-vk"></i></a>
+				</li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<!-- main -->
+	<main>
+		<!-- section-contacts -->
+		<section class="section-contacts page-contacts-section">
+			<div class="container">
+
+				<div class="section-contacts-title-wrapper">
+					<h2 class="title"><span>Контакты</span></h2>
+				</div>
+
+				<div class="section-contacts-row flex-row">
+
+					<div class="section-contacts-text-content">
+
+						<p class="section-contacts-text">Если вы ищите специалиста по верстке сайтов, front-end разработчика в команду или для работы над проектом — напишите мне.</p>
+
+						<dl class="section-contacts-list">
+							<dt>Email</dt>
+							<dd><a href="mailto:alsvis@gmail.com">alsvis2019@gmail.com</a></dd>
+							<dt>Skype</dt>
+							<dd><a href="skype:alexandr.svistunov">alexandr svistunov</a></dd>
+							<dt>Телефон</dt>
+							<dd><a href="tel:+73431234567">+7 (343) 123-45-67</a></dd>
+							<dt>Адрес</dt>
+							<dd>Россия, Екатеринбург</dd>
+						</dl>
+						<div class="social-icons-wrapper">
+							<a href="#" class="social-icons-link"><img src="./img/main-page/social-icons/github.svg" alt="Моя страница на Гитхабе"></a>
+							<a href="#" class="social-icons-link"><img src="./img/main-page/social-icons/telegram.svg" alt="Моя страница в Телеграм"></a>
+							<a href="https://vk.com/codemyself" class="social-icons-link"><img src="./img/main-page/social-icons/vk.svg" alt="Моя страница В контакте"></a>
+							<a href="#" class="social-icons-link"><img src="./img/main-page/social-icons//facebook.svg" alt="Моя страница на Фейсбуке"></a>
+						</div>
+
+					</div>
+					<div class="section-contacts-form-wrapper">
+						<form class="form" method="post" action="#" id="contact-form">
+							<input type="hidden" name="project_name" value="mysite.ru">
+							<input type="hidden" name="admin_email" value="alsvis2019@gmail.com">
+							<input type="hidden" name="email_form" value="info@mysite.ru">
+							<div class="input-wrapper">
+								<input id="mail" class="input input-validate" type="text" name="email">
+								<label for="mail" class="fake-placeholder">Ваш Email</label>
+							</div>
+							<div class="input-wrapper">
+								<input id="theme" class="input input-validate" type="text" name="theme">
+								<label for="theme" class="fake-placeholder">Тема письма</label>
+							</div>
+							<div class="input-wrapper textarea-wrapper">
+								<textarea id="message" class="textarea input-validate" name="message"></textarea>
+								<label for="message" class="fake-placeholder">Сообщение</label>
+							</div>
+							<div class="submit-wrapper">
+								<div class="submit-wrapper">
+									<input type="submit" class="submit" value="Отправить">
+								</div>
+							</div>
+						</form>
+						<div id="answer"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<h3 class="footer-copyright">© 2020 — Александр Свистунов</h3>
+			<div class="footer__about">
+				<p class="footer-text">Веб-разработчик из Екатеринбурга, занимаюсь версткой и созданием сайтов.</p>
+				<p class="footer-text">Этот сайт сделал в рамках прохождения обучения по верстке на курсах от <a class="footer-link" href="#">WebCademy.ru</a></p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Mobile menu -->
+	<div class="burger-wrap">
+		<div class="burger-item">
+			<div class="burger-lines"></div>
+		</div>
+
+		<div class="mobile-nav">
+			<div class="logo mobile-nav-logo">
+				<a href="index.html" class="logo-link">ас</a>
+			</div>
+
+			<ul class="mobile-nav-list">
+				<li>
+					<a href="index.html">Главная</a>
+				</li>
+				<li>
+					<a href="portfolio.html">Работы</a>
+				</li>
+				<li>
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+
+			<div class="social-icons-wrapper mobail-nav-icons-wrapper">
+				<a href="#" class="social-icons-link mobail-nav-icons"><img src="./img/main-page/social-icons/github.svg" alt="Моя страница на Гитхабе"></a>
+				<a href="#" class="social-icons-link mobail-nav-icons"><img src="./img/main-page/social-icons/telegram.svg" alt="Моя страница в Телеграм"></a>
+				<a href="https://vk.com/codemyself" class="social-icons-link mobail-nav-icons"><img src="./img/main-page/social-icons/vk.svg" alt="Моя страница В контакте"></a>
+				<a href="#" class="social-icons-link mobail-nav-icons"><img src="./img/main-page/social-icons//facebook.svg" alt="Моя страница на Фейсбуке"></a>
+			</div>
+			<a class="mobail-nav-mail-link" href="mailto:alsvis@gmail.com">alsvis2019@gmail.com</a>
+		</div>
+
+	</div>
+	<script src="./libs/jquery/jquery-3.0.0.min.js"></script>
+	<script src="./libs/mixitup2/jquery.mixitup.min.js"></script>
+	<script src="./libs/jquery.validate/jquery.validate.js"></script>
+	<script src="./js/main.js"></script>
+
+</body></html>
