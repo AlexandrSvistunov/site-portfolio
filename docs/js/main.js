@@ -14,17 +14,28 @@ $(document).ready(function () {
 	$('.filter-projects').mixItUp();
 
 	//-fake-placeholder
-	let validateInputs = document.querySelectorAll('.input-validate');
-	for (let i = 0; i < validateInputs.length; i++) {
-		validateInputs[i].addEventListener('change', function () {
+	var validateInputs = document.querySelectorAll('.input-validate');
+	for (var i = 0; i < validateInputs.length; i++) {
+		validateInputs[i].addEventListener('focus', function () {
+
+			this.nextElementSibling.classList.add('active');
+
+		});
+		validateInputs[i].addEventListener('blur', function () {
+			if (this.value.length == '0') {
+				this.nextElementSibling.classList.remove('active');
+			}
+		});
+		validateInputs[i].addEventListener('input', function () {
 
 			if (this.value.length !== '0') {
-				this.nextElementSibling.classList.add('active')
+				this.nextElementSibling.classList.add('active');
 			} else {
-				this.nextElementSibling.classList.remove('active')
+				this.nextElementSibling.classList.remove('active');
 			}
-		})
+		});
 	}
+
 	//-validate form
 	$('#contact-form').validate({
 		rules: {
@@ -59,7 +70,7 @@ $(document).ready(function () {
 
 	// Функция AJAX запрса на сервер
 	function ajaxFormSubmit() {
-		let string = $("#contact-form").serialize(); // Соханяем данные введенные в форму в строку. 
+		var string = $("#contact-form").serialize(); // Соханяем данные введенные в форму в строку. 
 
 		// Формируем ajax запрос
 		$.ajax({
@@ -80,4 +91,4 @@ $(document).ready(function () {
 
 
 
-})
+});
