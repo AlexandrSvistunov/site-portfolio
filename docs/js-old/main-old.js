@@ -27,9 +27,9 @@ $(document).ready(function () {
 			}
 		});
 		validateInputs[i].addEventListener('input', function () {
-			let thisLabel = this.parentElement
+
 			if (this.value.length !== '0') {
-				thisLabel.querySelector('.fake-placeholder').classList.add('active');
+				this.nextElementSibling.classList.add('active');
 			} else {
 				this.nextElementSibling.classList.remove('active');
 			}
